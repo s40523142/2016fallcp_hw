@@ -1,3 +1,5 @@
+
 mystring = "s40523142"
-mystring = mystring + " ZERO "
+mystring = mystring + " test "
 print(mystring)
+
