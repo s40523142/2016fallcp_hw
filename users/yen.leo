@@ -465,7 +465,8 @@ make.start()
 ##Welcome to my world
 
 &lt;small&gt;
-Created by [s40523142](https://github.com/s40523142)file:///D:/mini2016fall/data/tmp/2016fallcp_hw/users/yen.leo)
+Created by [s40523142](https://github.com/s40523142)
+
 &lt;/small&gt;
 
 [blog](https://s40523142.github.io/2016fallcp_hw/blog/index.html)
