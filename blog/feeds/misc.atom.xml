@@ -22,46 +22,7 @@ brython(1);
 
 &lt;canvas id="japanflag1" width="600" height="200"&gt;&lt;/canvas&gt;
 
-&lt;script type="text/python3"&gt;</summary><category term="繪圖"></category></entry><entry><title>Week 10 Brython 繪圖範例</title><link href="./week-10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-18T12:00:00+08:00</published><updated>2016-11-18T12:00:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-11-18:./week-10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Week 10 繪圖&lt;/p&gt;
-
-
-&lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
-
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
-
-&lt;script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-&lt;!-- 以下實際利用  Brython 畫兩條直線 --&gt;
-
-&lt;canvas id="japanflag1" width="600" height="200"&gt;&lt;/canvas&gt;
-
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-import math
-
-canvas = doc["japanflag1"]
-ctx = canvas.getContext("2d")
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(100, 100)
-ctx.lineTo(150, 200)
-ctx.moveTo(150, 100)
-ctx.lineTo(100, 200)
-# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-ctx.strokeStyle = "blue"
-ctx.stroke()
-ctx.closePath()
-&lt;/script&gt;</summary><category term="繪圖"></category></entry><entry><title>學員 s40523142 網誌</title><link href="./xue-yuan-s40523142-wang-zhi.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-11-15:./xue-yuan-s40523142-wang-zhi.html</id><summary type="html">&lt;p&gt;s40523142  超神網誌！！！&lt;/p&gt;
+&lt;script type="text/python3"&gt;</summary><category term="繪圖"></category></entry><entry><title>學員 s40523142 網誌</title><link href="./xue-yuan-s40523142-wang-zhi.html" rel="alternate"></link><published>2016-11-15T12:00:00+08:00</published><updated>2016-11-15T12:00:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-11-15:./xue-yuan-s40523142-wang-zhi.html</id><summary type="html">&lt;p&gt;s40523142  超神網誌！！！&lt;/p&gt;
 
 
 &lt;p&gt;這裡是學員s40523142第一次做的網誌
