@@ -101,10 +101,11 @@
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
 <v t="leo.20161115224356.1"><vh>@edit 20161115.md</vh></v>
+<v t="leo.20161118140857.1"><vh>@edit 20161118.md</vh></v>
 </v>
 </v>
 </v>
-<v t="amd.20160106094754.1"><vh>@path ./../content/pages</vh>
+<v t="amd.20160106094754.1" a="E"><vh>@path ./../content/pages</vh>
 <v t="amd.20160106094829.1" a="E"><vh>yen 所寫的 pages 文章</vh>
 <v t="amd.20160106094844.1"><vh>@edit pages_1.md</vh></v>
 </v>
@@ -122,6 +123,16 @@
 <v t="leo.20161115224343.9"><vh>Recovered node "HTML 投影片 (標題)" from @clean index.html</vh>
 <v t="leo.20161115224343.10"><vh>old:HTML 投影片 (標題)</vh></v>
 <v t="leo.20161115224343.11"><vh>new:HTML 投影片 (標題)</vh></v>
+</v>
+</v>
+<v t="leo.20161118133803.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20161118133803.3"><vh>Recovered node "利用 MD 寫內容" from @clean index.html</vh>
+<v t="leo.20161118133803.4"><vh>old:利用 MD 寫內容</vh></v>
+<v t="leo.20161118133803.5"><vh>new:利用 MD 寫內容</vh></v>
+</v>
+<v t="leo.20161118133803.6"><vh>Recovered node "計算機程式課程內涵" from @clean index.html</vh>
+<v t="leo.20161118133803.7"><vh>old:計算機程式課程內涵</vh></v>
+<v t="leo.20161118133803.8"><vh>new:計算機程式課程內涵</vh></v>
 </v>
 </v>
 </vnodes>
@@ -497,11 +508,11 @@ and images can be specified like so:
 
 						
 </t>
-<t tx="amd.20161004101327.2">## 使用 iframe 導入影片
+<t tx="amd.20161004101327.2">## 用ShareX拍的影片
 
-### Markdown 沒有 iframe
+###會陸續更新
 
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/191656204" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="amd.20161004101902.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -602,7 +613,6 @@ and images can be specified like so:
 @others
     &lt;/script&gt;
 &lt;/section&gt;
-
 
 						
 </t>
@@ -895,6 +905,60 @@ Diff...
       
       &lt;a href="blog/index.html"&gt;blog&lt;/a&gt;
   &lt;/section&gt;
+</t>
+<t tx="leo.20161118133803.2"></t>
+<t tx="leo.20161118133803.3">(uncached) amd.20161004101327.2
+Diff...
+- ## 用ShareX拍的影片
++ ## 使用 iframe 導入影片
+  
+- ###會陸續更新
++ ### Markdown 沒有 iframe
+  
+- &lt;iframe src="https://player.vimeo.com/video/191656204" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+?                                               --   ^^                      ^^^
++ &lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+?                                              ++  +  ^                      ^^^
+</t>
+<t tx="leo.20161118133803.4">## 使用 iframe 導入影片
+
+### Markdown 沒有 iframe
+
+&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20161118133803.5">## 用ShareX拍的影片
+
+###會陸續更新
+
+&lt;iframe src="https://player.vimeo.com/video/191656204" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20161118133803.6">(uncached) amd.20161004112026.1
+Diff...
+  &lt;section data-markdown&gt;
+      &lt;script type="text/template"&gt;
+  @others
+      &lt;/script&gt;
+  &lt;/section&gt;
+  
++ 
+  						
+</t>
+<t tx="leo.20161118133803.7">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20161118133803.8">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+						
 </t>
 </tnodes>
 </leo_file>
