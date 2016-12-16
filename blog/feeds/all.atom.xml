@@ -29,7 +29,20 @@ def get_input(ev):
 document['ch01'].bind('click',get_input)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="ch01"&gt;40523142&lt;/button&gt;&lt;/p&gt;</summary><category term="上課不要玩手機"></category></entry><entry><title>Week 12 Brython 繪圖範例</title><link href="./week-12-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-12-02T13:20:00+08:00</published><updated>2016-12-02T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-02:./week-12-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;繪製吉他和弦&lt;/p&gt;
+&lt;p&gt;&lt;button id="ch01"&gt;40523142&lt;/button&gt;&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import alert
+
+def get_input(ev):
+    the_input= input("請輸入")
+    alert("輸入為:"+str(the_input))
+
+document['ch01'].bind('click',get_input)
+&lt;/script&gt;
+&lt;button id="ch01"&gt;40523142&lt;/button&gt;
+&lt;/pre&gt;</summary><category term="上課不要玩手機"></category></entry><entry><title>Week 12 Brython 繪圖範例</title><link href="./week-12-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-12-02T13:20:00+08:00</published><updated>2016-12-02T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-02:./week-12-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;繪製吉他和弦&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
