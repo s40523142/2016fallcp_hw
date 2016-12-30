@@ -5,35 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2016-12-30T14:59:08-00:00</lastmod>
+<lastmod>2016-12-30T15:40:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2016-12-30T14:59:08-00:00</lastmod>
+<lastmod>2016-12-30T15:40:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2016-12-30T14:59:08-00:00</lastmod>
+<lastmod>2016-12-30T15:40:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2016-12-30T14:59:08-00:00</lastmod>
+<lastmod>2016-12-30T15:40:32-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2016-12-30T13:49:13+08:00</lastmod>
+<lastmod>2016-12-30T15:36:24+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./week-16-cai-shu-zi-brython.html</loc>
+<lastmod>2016-12-30T15:20:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -89,13 +96,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/misc.html</loc>
-<lastmod>2016-12-30T13:20:00+08:06</lastmod>
+<lastmod>2016-12-30T15:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tag/chuang-zao-li.html</loc>
+<loc>./tag/biao-da-neng-li.html</loc>
 <lastmod>2016-09-21T13:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -109,7 +116,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/biao-da-neng-li.html</loc>
+<loc>./tag/chuang-zao-li.html</loc>
+<lastmod>2016-09-21T13:20:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/marrychrismas.html</loc>
+<lastmod>2016-12-23T13:20:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/xie-tong-she-ji.html</loc>
+<lastmod>2016-09-21T13:20:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/shi-yong-dao-yin.html</loc>
 <lastmod>2016-09-21T13:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -123,29 +151,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/shang-ke-bu-yao-wan-shou-ji.html</loc>
-<lastmod>2016-12-16T13:20:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/marrychrismas.html</loc>
-<lastmod>2016-12-23T13:20:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/shi-yong-dao-yin.html</loc>
-<lastmod>2016-09-21T13:20:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/xie-tong-she-ji.html</loc>
-<lastmod>2016-09-21T13:20:00+08:06</lastmod>
+<loc>./tag/number-guess-guess-see.html</loc>
+<lastmod>2016-12-30T15:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -165,8 +172,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./tag/shang-ke-bu-yao-wan-shou-ji.html</loc>
+<lastmod>2016-12-16T13:20:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./author/s40523142.html</loc>
-<lastmod>2016-12-30T13:20:00+08:06</lastmod>
+<lastmod>2016-12-30T15:20:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
