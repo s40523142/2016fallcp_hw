@@ -84,6 +84,7 @@ document["but1"].bind("click", lottery)
 
 &lt;p&gt;&lt;button id="but1"&gt;帶來希望與夢想的按鈕&lt;/button&gt; &lt;/p&gt;
 &lt;pre class="brush: python"&gt;
+
 &lt;div id="newyear"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
 from browser import document
@@ -105,7 +106,9 @@ def lottery(e):
 #document["but1"].bind("click", gen_int)
 document["but1"].bind("click", lottery)
 &lt;/script&gt;
-&lt;button id="but1"&gt;帶來希望與夢想的按鈕&lt;/button&gt;</summary><category term="Number"></category></entry><entry><title>Week 15 Brython</title><link href="./week-15-brython.html" rel="alternate"></link><published>2016-12-23T13:20:00+08:00</published><updated>2016-12-23T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-23:./week-15-brython.html</id><summary type="html">&lt;p&gt;聖誕快樂HO~HO~HO~&lt;/p&gt;
+&lt;button id="but1"&gt;帶來希望與夢想的按鈕&lt;/button&gt; 
+
+&lt;/pre&gt;</summary><category term="Number"></category></entry><entry><title>Week 15 Brython</title><link href="./week-15-brython.html" rel="alternate"></link><published>2016-12-23T13:20:00+08:00</published><updated>2016-12-23T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-23:./week-15-brython.html</id><summary type="html">&lt;p&gt;聖誕快樂HO~HO~HO~&lt;/p&gt;
 
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
@@ -149,6 +152,7 @@ do["b1"].bind("click", compa)
 &lt;p&gt;&lt;button id="b1"&gt;hahahahahahahahahahaha&lt;/button&gt;&lt;/p&gt;
 
 &lt;pre class="brush: python"&gt;
+
 &lt;div id="con"&gt;&lt;/div&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as do
@@ -170,7 +174,9 @@ for i in range(5):
 do["b1"].bind("click", compa)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="b1"&gt;hahahahahahahahahahaha&lt;/button&gt;&lt;/p&gt;</summary><category term="MarryChrismas"></category></entry><entry><title>Week 14</title><link href="./week-14.html" rel="alternate"></link><published>2016-12-16T13:20:00+08:00</published><updated>2016-12-16T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-16:./week-14.html</id><summary type="html">&lt;p&gt;上課不要玩手機&lt;/p&gt;
+&lt;p&gt;&lt;button id="b1"&gt;hahahahahahahahahahaha&lt;/button&gt;&lt;/p&gt;
+
+&lt;/pre&gt;</summary><category term="MarryChrismas"></category></entry><entry><title>Week 14</title><link href="./week-14.html" rel="alternate"></link><published>2016-12-16T13:20:00+08:00</published><updated>2016-12-16T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-16:./week-14.html</id><summary type="html">&lt;p&gt;上課不要玩手機&lt;/p&gt;
 
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
@@ -213,6 +219,7 @@ def get_input(ev):
 document['ch01'].bind('click',get_input)
 &lt;/script&gt;
 &lt;button id="ch01"&gt;40523142&lt;/button&gt;
+
 &lt;/pre&gt;</summary><category term="上課不要玩手機"></category></entry><entry><title>Week 12 Brython 繪圖範例</title><link href="./week-12-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-12-02T13:20:00+08:00</published><updated>2016-12-02T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-02:./week-12-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;繪製吉他和弦&lt;/p&gt;
 
 
