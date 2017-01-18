@@ -8,6 +8,9 @@
 轉!轉!轉!吉祥如意一起來&lt;/p&gt;
 
 
+&lt;p&gt;這是利用人的視覺暫留連續旋轉動畫
+輸入重新繪製的程式碼時 因為稍微複雜些
+一開始一直有小缺陷  不過後來還是看懂然後解決了&lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
@@ -93,6 +96,7 @@ timer.set_interval(animate, 50)
 &lt;p&gt;上述繪圖的程式碼如下:&lt;/p&gt;
 
 &lt;pre class="brush: python"&gt;
+
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 &lt;script type="text/javascript" 
     src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
@@ -170,8 +174,11 @@ def animate():
 
 timer.set_interval(animate, 50)
 &lt;/script&gt;
+
 &lt;/pre&gt;</summary><category term="circle"></category></entry><entry><title>Week 17 Brython</title><link href="./week-17-brython.html" rel="alternate"></link><published>2017-01-06T13:20:00+08:00</published><updated>2017-01-06T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2017-01-06:./week-17-brython.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
+&lt;p&gt;這是要畫一顆圓球 並連在一條線上的繪圖
+這個滿簡單的  但是圓的函式那邊還是有點看不懂&lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
@@ -272,9 +279,18 @@ ctx.closePath()
 
 circle(200, 200, 5)
 &lt;/script&gt;
+
 &lt;/pre&gt;</summary><category term="ball"></category></entry><entry><title>Week 16 猜數字 Brython</title><link href="./week-16-cai-shu-zi-brython.html" rel="alternate"></link><published>2016-12-30T15:20:00+08:00</published><updated>2016-12-30T15:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-30:./week-16-cai-shu-zi-brython.html</id><summary type="html">&lt;p&gt;來啊~~PK~~啊~~&lt;/p&gt;
 
 
+&lt;p&gt;運用上次學到的創造button的程式碼
+然後這次為button加點功能
+先設定讓網頁自行選擇1~100的數字
+然後由進到這網頁的人猜
+假如猜錯就會print"太大了" 或 "太小了"的文字出來
+直到猜對 還會計算你猜的數字 
+而這些文字要去
+更多工具--&amp;gt;開發人員工具--&amp;gt;Console 查看&lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
@@ -313,9 +329,56 @@ while 標準答案 != 你猜的數字:
     猜測次數 += 1
 
 print("猜對了！總共猜了", 猜測次數, "次")
-&lt;/script&gt;</summary><category term="Number guess guess see"></category></entry><entry><title>Week 16 Brython</title><link href="./week-16-brython.html" rel="alternate"></link><published>2016-12-30T13:20:00+08:00</published><updated>2016-12-30T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-30:./week-16-brython.html</id><summary type="html">&lt;p&gt;新年快樂 HA~HA~HA~&lt;/p&gt;
+&lt;/script&gt;
+
+&lt;pre class="brush: python"&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下可以執行  Brython 程式 --&gt;
+&lt;div id="newyear"&gt;&lt;/div&gt;
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import html
+
+#coding: utf-8
+# 猜數字遊戲
+import random
+
+標準答案 = random.randint(1, 100)
+你猜的數字 = int(input("請輸入您所猜的整數:"))
+猜測次數 = 1
+while 標準答案 != 你猜的數字:
+    if 標準答案 &lt; 你猜的數字:
+        print("太大了，再猜一次 :)加油")
+    else:
+        print("太小了，再猜一次 :)加油")
+    你猜的數字 = int(input("請輸入您所猜的整數:"))
+    猜測次數 += 1
+
+print("猜對了！總共猜了", 猜測次數, "次")
+&lt;/script&gt;
+
+&lt;/pre&gt;</summary><category term="Number guess guess see"></category></entry><entry><title>Week 16 Brython</title><link href="./week-16-brython.html" rel="alternate"></link><published>2016-12-30T13:20:00+08:00</published><updated>2016-12-30T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-30:./week-16-brython.html</id><summary type="html">&lt;p&gt;新年快樂 HA~HA~HA~&lt;/p&gt;
 
 
+&lt;p&gt;運用上次學到的創造button的程式碼
+然後這次為button加點功能
+當按下button會列出6個數字
+這次是使用大樂透基準1~49號
+但會有重複數字出現
+所以要再多加一個設定&lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
@@ -355,9 +418,29 @@ def lottery(e):
 document["but1"].bind("click", lottery)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="but1"&gt;帶來希望與夢想的按鈕&lt;/button&gt; &lt;/p&gt;</summary><category term="Number"></category></entry><entry><title>Week 15 Brython</title><link href="./week-15-brython.html" rel="alternate"></link><published>2016-12-23T13:20:00+08:00</published><updated>2016-12-23T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-23:./week-15-brython.html</id><summary type="html">&lt;p&gt;聖誕快樂HO~HO~HO~&lt;/p&gt;
+&lt;p&gt;&lt;button id="but1"&gt;帶來希望與夢想的按鈕&lt;/button&gt; &lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import html
+import random
+print_location = document["newyear"]
+
+def lottery(e):
+    num_list = random.sample(list(range(1, 50)), 6)
+    for i in range(6):
+        print_location &lt;= num_list[i] + html.BR()
+    print_location &lt;= "不會出現重複數字的按鈕" + html.BR()
+
+document["but2"].bind("click", lottery)
+&lt;/script&gt;
+
+&lt;p&gt;&lt;button id="but2"&gt;恭喜中獎&lt;/button&gt;&lt;/p&gt;</summary><category term="Number"></category></entry><entry><title>Week 15 Brython</title><link href="./week-15-brython.html" rel="alternate"></link><published>2016-12-23T13:20:00+08:00</published><updated>2016-12-23T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-23:./week-15-brython.html</id><summary type="html">&lt;p&gt;聖誕快樂HO~HO~HO~&lt;/p&gt;
 
 
+&lt;p&gt;創造button功能
+先設定以"10"為基準去評比接下來使用此網頁的人
+所打的的數字比"10"大OR小
+並將答案列在網頁上&lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
@@ -396,9 +479,53 @@ for i in range(5):
 do["b1"].bind("click", compa)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="b1"&gt;hahahahahahahahahahaha&lt;/button&gt;&lt;/p&gt;</summary><category term="MarryChrismas"></category></entry><entry><title>Week 14</title><link href="./week-14.html" rel="alternate"></link><published>2016-12-16T13:20:00+08:00</published><updated>2016-12-16T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-16:./week-14.html</id><summary type="html">&lt;p&gt;上課不要玩手機&lt;/p&gt;
+&lt;p&gt;&lt;button id="b1"&gt;hahahahahahahahahahaha&lt;/button&gt;&lt;/p&gt;
+
+&lt;pre class="brush: python"&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下可以執行  Brython 程式 --&gt;
+
+&lt;div id="con"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as do
+from browser import html
+c = do["con"]
+def compa(e):
+    your_input = input("請輸入一個整數!")
+    # 如何判斷所輸入的整數比 10 大
+    if int(your_input) &gt; 10:
+        c &lt;= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
+    else:
+        c &lt;= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
+
+#print("test")
+'''
+for i in range(5):
+    c &lt;= "test" + html.BR()
+'''
+do["b1"].bind("click", compa)
+&lt;/script&gt;
+
+&lt;p&gt;&lt;button id="b1"&gt;hahahahahahahahahahaha&lt;/button&gt;&lt;/p&gt;
+
+&lt;/pre&gt;</summary><category term="MarryChrismas"></category></entry><entry><title>Week 14</title><link href="./week-14.html" rel="alternate"></link><published>2016-12-16T13:20:00+08:00</published><updated>2016-12-16T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-16:./week-14.html</id><summary type="html">&lt;p&gt;上課不要玩手機&lt;/p&gt;
 
 
+&lt;p&gt;就是一個創造Button的程式碼&lt;/p&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
@@ -426,7 +553,37 @@ def get_input(ev):
 document['ch01'].bind('click',get_input)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id="ch01"&gt;40523142&lt;/button&gt;&lt;/p&gt;</summary><category term="上課不要玩手機"></category></entry><entry><title>Week 12 Brython 繪圖範例</title><link href="./week-12-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-12-02T13:20:00+08:00</published><updated>2016-12-02T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-02:./week-12-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;繪製吉他和弦&lt;/p&gt;
+&lt;p&gt;&lt;button id="ch01"&gt;40523142&lt;/button&gt;&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- ch01 基本的列印與輸入函式 --&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import alert
+
+def get_input(ev):
+    the_input= input("請輸入")
+    print("輸入為:"+str(the_input))
+
+document['ch01'].bind('click',get_input)
+&lt;/script&gt;
+&lt;button id="ch01"&gt;40523142&lt;/button&gt;
+
+&lt;/pre&gt;</summary><category term="上課不要玩手機"></category></entry><entry><title>Week 12 Brython 繪圖範例</title><link href="./week-12-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-12-02T13:20:00+08:00</published><updated>2016-12-02T13:20:00+08:00</updated><author><name>s40523142</name></author><id>tag:,2016-12-02:./week-12-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;繪製吉他和弦&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
